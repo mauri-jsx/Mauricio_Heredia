@@ -22,8 +22,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.use("/auth", authRouter);
-app.use("/orders", ordersRouter);
+app.use("/api", authRouter);
+app.use("/api", ordersRouter);
 
 // error handler
 app.use((err, _req, res, _next) => {

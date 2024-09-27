@@ -6,10 +6,10 @@ import {
 
 const ordersRouter = Router();
 
-// ! NO FUNCIONA LA RUTA /orders
-ordersRouter.get("/", getOrdersCtrl);
 
-// ! FALTAN VALIDACIONES DE DATOS
-ordersRouter.post("/", createOrderCtrl);
+ordersRouter.get("/orders", getOrdersCtrl);
+
+
+ordersRouter.post("/orders", createOrderCtrl);
 
 export { ordersRouter };
