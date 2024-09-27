@@ -10,7 +10,6 @@ export const createUser = async (user) => {
   const hashedPassword = await hash(password, salt);
 
   const newUser = {
-    // Generate a random id
     id: crypto.randomUUID().toString(),
     username,
     email,
